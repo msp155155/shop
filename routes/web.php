@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('/test')->group(function (){
+    Route::get('redis1','AddController@redis1');
+    Route::get('redis2','AddController@redis2');
+});
