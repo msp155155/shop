@@ -22,4 +22,10 @@ class Addcontroller extends Controller
 
         echo "val: ".$val;
     }
+
+    public function mysql1()
+    {
+        $list = DB::table()->all();
+        var_dump($list);
+    }
 }
